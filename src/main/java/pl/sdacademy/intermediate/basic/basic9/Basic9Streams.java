@@ -167,6 +167,7 @@ public class Basic9Streams {
                                    + isAdultPersonPhoneDividableBy5);
 
         System.out.println("Hello world!");
+        System.out.println("Hello world!");
     }
 
 }
