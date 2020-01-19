@@ -2,3 +2,5 @@
 Repository for SDA group ldz24
 
 This is for course "Programming 2" in SDA
+
+Updating README.md from first repository copy
