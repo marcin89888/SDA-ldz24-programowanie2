@@ -169,5 +169,4 @@ public class Basic9Streams {
         System.out.println("Hello world!");
         System.out.println("Hello world!");
     }
-
 }
