@@ -4,6 +4,11 @@ import org.junit.*;
 
 public class RectangleTest {
 
+    private static final int DEFAULT_WIDTH = 3;
+    private static final int DEFAULT_HIGH = 4;
+    private static final int DEFAULT_AREA = 12;
+    private static final int DEFAULT_PERIMETER = 14;
+
     Rectangle rectangle;
 
     @BeforeClass
@@ -18,7 +23,7 @@ public class RectangleTest {
 
     @Before
     public void setRectangle() {
-        this.rectangle = new Rectangle(3, 4);
+        this.rectangle = new Rectangle(DEFAULT_WIDTH, DEFAULT_HIGH);
     }
 
     @After
@@ -29,31 +34,31 @@ public class RectangleTest {
 
     @Test
     public void testCalculateArea() {
-        Assert.assertEquals(12, rectangle.calculateArea());
+        Assert.assertEquals(DEFAULT_AREA, rectangle.calculateArea());
     }
 
     @Test
     public void testCalculatePerimeter() {
-        Assert.assertEquals(14, rectangle.calculatePerimeter());
+        Assert.assertEquals(DEFAULT_PERIMETER, rectangle.calculatePerimeter());
     }
 
     @Test
     public void testExceptionOnIncorrectValuesInConstructor() {
-        new Rectangle(-1, 4);
+        new Rectangle(-1, DEFAULT_HIGH);
     }
 
     @Test
     public void testGetHigh() {
-        Assert.assertEquals(14, rectangle.calculatePerimeter());
+        Assert.assertEquals(DEFAULT_HIGH, rectangle.calculatePerimeter());
     }
 
     @Test
     public void testGetWidth() {
-        Assert.assertEquals(14, rectangle.calculatePerimeter());
+        Assert.assertEquals(DEFAULT_WIDTH, rectangle.calculatePerimeter());
     }
 
     @Test
-    public void testWuidthNotUpdate() {
+    public void testWidthNotUpdate() {
         rectangle.updateWidth(0);
         Assert.assertEquals(9, rectangle.getWidth());
     }
