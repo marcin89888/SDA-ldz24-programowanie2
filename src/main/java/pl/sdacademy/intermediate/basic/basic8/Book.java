@@ -19,7 +19,6 @@ class Book {
     private double price;
     private Genre genre;
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
